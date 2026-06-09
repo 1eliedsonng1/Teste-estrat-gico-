@@ -1,5 +1,6 @@
 import { useState, useCallback } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { SpeedInsights } from '@vercel/speed-insights/react'
 import { CartProvider } from '@/context/CartContext'
 import { Toaster } from '@/components/ui/sonner'
 import SplashScreen from '@/components/SplashScreen'
@@ -43,6 +44,7 @@ function AppContent() {
         </div>
       </div>
       <Toaster richColors position="top-center" />
+      <SpeedInsights />
     </>
   )
 }
